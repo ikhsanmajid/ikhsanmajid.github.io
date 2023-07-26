@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>My Resume</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="navbar position-sticky">
+        <div class="menu-bar">
+            <div class="logo">
+                <img src="assets/img/brand-icon.svg" alt="">
+            </div>
+            <a href="javascript:void(0)" onclick="menuClicked()" class="menu-dropdown"><i
+                    class='bx bx-menu menu'></i></a>
+        </div>
+        <div id="menu" class="menu-list">
+            <a href="#about" class="menu-items">About</a>
+            <a href="#education" class="menu-items">Education</a>
+            <a href="#works" class="menu-items">Work Experience</a>
+            <a href="#contact" class="menu-items">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <!--About Section-->
+        <section id="about" class="about grid">
+            <div class="greetings">Hi !, I am Ikhsan</div>
+            <div class="profile-picture"><img src="assets/img/ikhsan-photo.png" alt=""></div>
+            <div class="introduction grid">
+                <p class="introduction-text">I am a worker and also an Informatics Engineering student. I am expert in
+                    Javascript, PHP, Phyton languages. I speak English and Mandarin too</p>
+                <div class="contact-me">
+                    <a href="mailto:ikhsanmajid@gmail.com" class="button email-me">
+                        <i class='bx bx-mail-send'></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="#" class="button download-cv">
+                        <i class='bx bx-download'></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--Skills Section-->
+        <section class="skills grid">
+            <div  data-aos="fade-up"  data-aos-duration="1500" class="backend">
+                <h3>Backend Languages</h3>
+                <div class="skills-icon-group grid">
+                    <img src="assets/img/nodejs-logo.png" class="skills-icon" alt="">
+                    <img src="assets/img/python logo.png" class="skills-icon" alt="">
+                    <img src="assets/img/php-logo.png" class="skills-icon" alt="">
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="frontend">
+                <h3>Frontend Languages</h3>
+                <div class="skills-icon-group grid">
+                    <img src="assets/img/html-logo.png" class="skills-icon" alt="">
+                    <img src="assets/img/css-logo.png" class="skills-icon" alt="">
+                    <img src="assets/img/js-logo.png" class="skills-icon" alt="">
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="human-languages">
+                <h3>Human Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Mandarin <i class="font-smaller">Simplified</i></li>
+                    <li>Javanese</li>
+                    <li>Indonesian</li>
+                </ul>
+            </div>
+        </section>
+
+        <!--Education Section-->
+        <section data-aos="fade-up" data-aos-duration="1500" id="education" class="education grid">
+            <h2>My Education</h2>
+            <div data-aos="fade-up" data-aos-duration="1500" class="timeline">
+                <div class="center-line"></div>
+                <div class="school">
+                    <h2>SMKN 2 Surakarta</h2>
+                    <span class="year font-smaller font-bolder">2015 - 2018</span>
+                    <p>Network and Computer Engineering</p>
+                    <p class="place font-smaller">Indonesia, Central Java, Surakarta</p>
+                </div>
+                <div class="school">
+                    <h2>Nanjing Jinling Vocational High School</h2>
+                    <span class="year font-smaller font-bolder">2018</span>
+                    <p>Network and Computer Engineering</p>
+                    <p class="place font-smaller">China, Jiangsu, Nanjing</p>
+                </div>
+                <div class="school">
+                    <h2>Duta Bangsa University</h2>
+                    <span class="year font-smaller font-bolder">2021 - Now</span>
+                    <p>Informatics Engineering</p>
+                    <p class="place font-smaller">Indonesia, Central Java, Surakarta</p>
+                </div>
+            </div>
+        </section>
+
+        <!--Works Section-->
+        <section data-aos="fade-up"  data-aos-duration="1500" id="works" class="works grid">
+            <h2>My Work Experience</h2>
+            <div data-aos="fade-up" data-aos-duration="1500" class="work-item grid">
+                <img src="assets/img/gmedia-brand.png" alt="" class="work-logo">
+                <div class="work-information">
+                    <h2>GMedia Technologies</h2>
+                    <span class="year font-smaller font-bolder">2017</span>
+                    <p>As an intern in a network support position</p>
+                    <p class="place font-smaller">Indonesia, Central Java, Surakarta</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="work-item grid">
+                <img src="assets/img/konimex-brand.png" alt="" class="work-logo">
+                <div class="work-information">
+                    <h2>Konimex Pharmaceutical</h2>
+                    <span class="year font-smaller font-bolder">2019 - Now</span>
+                    <p>As an employee in a archiving staff position</p>
+                    <p class="place font-smaller">Indonesia, Central Java, Sukoharjo</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--Footer-->
+    <div id="contact" class="footer grid">
+        <h2>Get in Touch</h2>
+        <div class="sosmed-list">
+            <ul>
+                <li>
+                    <a href="https://wa.me/6282324760750">
+                        <i class='bx bxl-whatsapp font-big'></i>
+                        <span>+62 82324760750</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://fb.com/ikhsan.majid.7">
+                        <i class='bx bxl-facebook-square font-big'></i>
+                        <span>Syaharudin Ikhsan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/sikhsannm">
+                        <i class='bx bxl-instagram-alt font-big'></i>
+                        <span>sikhsannm</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        x = document.getElementById("menu")
+        y = Array.from(x.children)
+
+        function menuClicked(){
+            if (x.style.opacity == 1){
+                x.style.opacity = 0
+            }else {
+                x.style.opacity = 1
+            }
+        }
+
+        y.forEach((child) => {
+            child.addEventListener("click", () => {
+                menuClicked()
+            })
+        })
+
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
