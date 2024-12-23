@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.css"
+        integrity="sha512-9NawOLzuLE2GD22PJ6IPWXEjPalb/FpdH1qMpgXdaDM+0OfxEV75ZCle6KhZi0vM6ZWvMrNnIZv6YnsL+keVmA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>My Resume</title>
 </head>
 
@@ -36,8 +40,9 @@
             <div class="greetings">Hi !, I am Ikhsan</div>
             <div class="profile-picture"><img src="assets/img/ikhsan-photo.png" alt=""></div>
             <div class="introduction grid">
-                <p class="introduction-text">I am a worker and also an Informatics Engineering student. I am expert in
-                    Javascript, PHP, Phyton languages. I speak English and Mandarin too</p>
+                <p class="introduction-text">I am a professional worker and also an Informatics Engineering student. I
+                    have expertise in programming languages such as JavaScript, PHP, and Python. I am also proficient in
+                    frameworks like Next.js and Laravel. Additionally, I am fluent in English and Mandarin.</p>
                 <div class="contact-me">
                     <a href="mailto:ikhsanmajid@gmail.com" class="button email-me">
                         <i class='bx bx-mail-send'></i>
@@ -53,11 +58,10 @@
 
         <!--Skills Section-->
         <section class="skills grid">
-            <div  data-aos="fade-up"  data-aos-duration="1500" class="backend">
+            <div data-aos="fade-up" data-aos-duration="1500" class="backend">
                 <h3>Backend Languages</h3>
                 <div class="skills-icon-group grid">
                     <img src="assets/img/nodejs-logo.png" class="skills-icon" alt="">
-                    <img src="assets/img/python logo.png" class="skills-icon" alt="">
                     <img src="assets/img/php-logo.png" class="skills-icon" alt="">
                 </div>
             </div>
@@ -70,13 +74,66 @@
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1500" class="human-languages">
-                <h3>Human Languages</h3>
+                <h3>Frameworks</h3>
+                <div class="skills-icon-group grid">
+                    <img src="assets/img/laravel.png" class="skills-icon" alt="">
+                    <img src="assets/img/nextjs.svg" class="skills-icon" alt="">
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="human-languages">
+                <h3>Languages</h3>
                 <ul>
                     <li>English</li>
                     <li>Mandarin <i class="font-smaller">Simplified</i></li>
                     <li>Javanese</li>
                     <li>Indonesian</li>
                 </ul>
+            </div>
+        </section>
+
+        <!--Portfolio Section-->
+        <section data-aos="fade-up" data-aos-duration="1500" id="portfolio" class="portfolio grid">
+            <h2>My Portfolio</h2>
+            <div data-aos="fade-up" data-aos-duration="1500" class="portfolio-item grid">
+                <div class="swiper portfolio-logo">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper" id="gallery">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="assets/img/web monitoring mbr1.png" class="portfolio-icon"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/web monitoring mbr2.png" class="portfolio-icon"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/web monitoring mbr3.png" class="portfolio-icon"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/web monitoring mbr4.png" class="portfolio-icon"
+                                alt=""></div>
+                        <div class="swiper-slide"><img src="assets/img/web monitoring mbr5.png" class="portfolio-icon"
+                                alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="portfolio-information">
+                    <h2>Sistem Monitoring MBR (PT Konimex)</h2>
+                    <span class="year font-smaller font-bolder">2024</span>
+                    <h4>Demo Link: <a href="https://frontend-mbr.vercel.app" target="_blank">Sistem Monitoring MBR</a></h4>
+                    <p>Developing an MBR Monitoring Application at PT Konimex using modern web technologies with the
+                        following features:</p>
+                        <ul>
+                            <li>Multi-role user management for flexible access control.</li>
+                            <li>Automatic numbering for MBRs to streamline usage tracking.</li>
+                            <li>Informative dashboards tailored for Administrators and Users.</li>
+                            <li>Efficient management of MBR returns after usage.</li>
+                            <li>Capability to generate reports in XLSX format for unreturned MBRs.</li>
+                        </ul>     
+                    <p>Technologies Used:</p>
+                    <p>Frontend: Next.js<br>
+                        Backend: Node.js with Express.js<br>
+                        Database: MySQL</p>
+                    <p class="place font-smaller">Indonesia, Central Java, Sukoharjo</p>
+                </div>
+            </div>
+            <div>
+                <img id="image" src="">
             </div>
         </section>
 
@@ -99,7 +156,7 @@
                 </div>
                 <div class="school">
                     <h2>Duta Bangsa University</h2>
-                    <span class="year font-smaller font-bolder">2021 - Now</span>
+                    <span class="year font-smaller font-bolder">2021 - Present</span>
                     <p>Informatics Engineering</p>
                     <p class="place font-smaller">Indonesia, Central Java, Surakarta</p>
                 </div>
@@ -107,14 +164,16 @@
         </section>
 
         <!--Works Section-->
-        <section data-aos="fade-up"  data-aos-duration="1500" id="works" class="works grid">
+        <section data-aos="fade-up" data-aos-duration="1500" id="works" class="works grid">
             <h2>My Work Experience</h2>
             <div data-aos="fade-up" data-aos-duration="1500" class="work-item grid">
                 <img src="assets/img/gmedia-brand.png" alt="" class="work-logo">
                 <div class="work-information">
                     <h2>GMedia Technologies</h2>
                     <span class="year font-smaller font-bolder">2017</span>
-                    <p>As an intern in a network support position</p>
+                    <h4>IT Support Intern</h4>
+                    <p>As an intern in a network support position, I assist in maintaining and troubleshooting network
+                        systems to ensure seamless connectivity and reliable performance.</p>
                     <p class="place font-smaller">Indonesia, Central Java, Surakarta</p>
                 </div>
             </div>
@@ -122,13 +181,30 @@
                 <img src="assets/img/konimex-brand.png" alt="" class="work-logo">
                 <div class="work-information">
                     <h2>Konimex Pharmaceutical</h2>
-                    <span class="year font-smaller font-bolder">2019 - Now</span>
-                    <p>As an employee in a archiving staff position</p>
+                    <span class="year font-smaller font-bolder">Aug 2024 - Jan 2025</span>
+                    <h4>Internship Software Developer</h4>
+                    <p>Developing an MBR Monitoring Application at PT Konimex with features including automatic MBR
+                        numbering, monitoring of unreturned MBRs, downloadable reports in XLSX format, and an
+                        informative dashboard for both users and administrators.</p>
+                    <p class="place font-smaller">Indonesia, Central Java, Sukoharjo</p>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500" class="work-item grid">
+                <img src="assets/img/konimex-brand.png" alt="" class="work-logo">
+                <div class="work-information">
+                    <h2>Konimex Pharmaceutical</h2>
+                    <span class="year font-smaller font-bolder">2019 - Present</span>
+                    <h4>Archiving Staff</h4>
+                    <p>As an employee in an archiving staff position, I specialize in organizing, managing, and
+                        maintaining document archives to ensure efficient retrieval and secure storage.</p>
                     <p class="place font-smaller">Indonesia, Central Java, Sukoharjo</p>
                 </div>
             </div>
         </section>
     </div>
+
+
+
 
     <!--Footer-->
     <div id="contact" class="footer grid">
@@ -158,14 +234,16 @@
     </div>
 
     <script>
-        x = document.getElementById("menu")
-        y = Array.from(x.children)
+        const x = document.getElementById("menu");
+        const y = Array.from(x.children);
 
-        function menuClicked(){
-            if (x.style.opacity == 1){
+        function menuClicked() {
+            if (x.style.opacity == 1) {
                 x.style.opacity = 0
-            }else {
+                x.style.display = 'none'
+            } else {
                 x.style.opacity = 1
+                x.style.display = 'block'
             }
         }
 
@@ -177,8 +255,38 @@
 
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.7/viewer.js"
+        integrity="sha512-yCoaAsH23sTJL1ds2vCO4YuFWLfmyh+n8f2IGGL+fWAtMj+EzNvy2utWykHwbhs07I4a7auuXlCOJBIE601vuQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         AOS.init();
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            effect: 'coverflow',
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+    </script>
+    <script>
+        // View an image.
+        const viewer = new Viewer(document.getElementById('image'), {
+            inline: false,
+            viewed() {
+                viewer.zoomTo(1);
+            },
+        });
+        // Then, show the image by clicking it, or call `viewer.show()`.
+
+        // View a list of images.
+        // Note: All images within the container will be found by calling `element.querySelectorAll('img')`.
+        const gallery = new Viewer(document.getElementById('gallery'));
     </script>
 
 </body>
